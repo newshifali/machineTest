@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-init="fetchcart()">
+<table style="border: solid black 1px">
+	<tr style="border: solid black 1px">
+		<th style="border: solid black 1px">name</th>
+		<th style="border: solid black 1px">price</th>
+		<th style="border: solid black 1px">quantity</th>
+	</tr>
+	<tr ng-repeat="data1 in datacartArray">
+		<td>{{data1.productname}}</td>
+		<td>{{data1.productprice}}</td>
+		<td>{{data1.productquantity}}</td>
+		<!-- <td><button ng-click="addtocart(data)">AddToCart</button></td> -->
+		
+	</tr>
+</table>
+</body>
+</html>
